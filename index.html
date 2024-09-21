@@ -15,6 +15,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Um quiz interativo para testar seus conhecimentos.">
         <title>Quiz para Programadores</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
     </head>
 
     <body>
@@ -169,11 +171,11 @@
 
             <section> <!--Formulário de feedback-->
                 <h2>Nos dê o seu feedback</h2>
-                <form>
+                <form id="frm">
                     <fieldset>
                         <legend>Informações de contato:</legend>
-                        <label for="name">Nome:</label>
-                        <input id="name" name="name" type="text">
+                        <label for="nome">Nome:</label>
+                        <input id="nome" name="nome" type="text">
                         <br>
     
                         <label for="sobrenome">Sobrenome:</label>
@@ -189,7 +191,7 @@
                         <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Digite seus comentários aqui..."></textarea>]
                         <br>
 
-                        <button onclick="alert('Feedback enviado!')">Enviar</button>
+                        <button id="btn" onclick="alert('Feedback enviado!')">Enviar</button>
                     </fieldset>
                 </form>
             </section>
